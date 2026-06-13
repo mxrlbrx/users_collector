@@ -1,0 +1,8 @@
+components/
+  ui/
+    Input.jsx           // базовый инпут (label, type, error)
+    PasswordInput.jsx   // обёртка над Input с иконкой глаза + шкалой сложности
+    Button.jsx          // (опционально)
+  LoginForm.jsx
+  RegisterForm.jsx
+  AuthPage.jsx          // переключение форм
