@@ -1,12 +1,13 @@
 import type { InputHTMLAttributes } from 'react';
 import './_universalInput.scss';
+import type { FieldError } from 'react-hook-form';
 
 type UniversalInputProps = {
 	label?: string;
-	error?: string;
+	error?: FieldError ;
 } & InputHTMLAttributes<HTMLInputElement>;
 
-export function UniversalInput({ label, id, name, ...props }: UniversalInputProps) {
+export function UniversalInput({ label, id, error, name, ...props }: UniversalInputProps) {
 	const inputId = id || name;
 
 	return (
@@ -17,8 +18,7 @@ export function UniversalInput({ label, id, name, ...props }: UniversalInputProp
 				</label>
 			)}
 
-			<input id={inputId} name={name} {...props} className='input__field'/>
-
+			<input id={inputId} name={name} {...props} className={`input__field ${error ? 'input__field_error' : ''}`} />
 		</div>
 	);
 }
