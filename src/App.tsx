@@ -1,9 +1,9 @@
-import { LoginForm } from './components/ui/LoginForm/LoginForm';
+import { RegistrationForm } from './components/ui/RegistrationForm/RegistrationForm';
 
 export function App() {
 	return (
 		<main>
-			<LoginForm />
+			<RegistrationForm />
 		</main>
 	);
 }

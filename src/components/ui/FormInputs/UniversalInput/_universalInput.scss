@@ -1,0 +1,24 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  &__field {
+    padding: 12px;
+    font-size: inherit;
+  }
+
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+
+  &__label {
+    text-align: start;
+  }
+}
